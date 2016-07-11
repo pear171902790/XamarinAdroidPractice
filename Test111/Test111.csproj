@@ -49,6 +49,7 @@
     <Compile Include="PhonewordTranslator.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="CallHistoryActivity.cs" />
+    <Compile Include="AutoCompleteActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -63,6 +64,7 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable\xiao.jpg" />
+    <AndroidResource Include="Resources\layout\AutoComplete.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

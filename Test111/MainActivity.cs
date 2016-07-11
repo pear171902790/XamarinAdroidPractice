@@ -13,16 +13,24 @@ namespace Test111
 	public class MainActivity : Activity
 	{
 		static readonly List<string> phoneNumbers = new List<string>();
-		protected override void OnCreate(Bundle bundle)
+		protected override void OnCreate(Bundle savedInstanceState)
 		{
-			base.OnCreate(bundle);
+			base.OnCreate(savedInstanceState);
 
 			SetContentView(Resource.Layout.Main);
+		}
+
+
+
+		protected override void OnStart()
+		{
+			base.OnStart();
 
 			var phoneNumberText = FindViewById<TextView>(Resource.Id.PhoneNumberText);
 			var translateButton = FindViewById<Button>(Resource.Id.TranslateButton);
 			var callButton = FindViewById<Button>(Resource.Id.CallButton);
-
+			var goToComplete = FindViewById<Button>(Resource.Id.GoToAutoComplete);
+			Button callHistoryButton = FindViewById<Button>(Resource.Id.CallHistoryButton);
 			callButton.Enabled = false;
 
 			var translatedNumber = string.Empty;
@@ -41,30 +49,36 @@ namespace Test111
 					callButton.Enabled = true;
 				}
 			};
-			Button callHistoryButton = FindViewById<Button>(Resource.Id.CallHistoryButton);
+
 			callHistoryButton.Click += (sender, e) =>
 			{
 				var intent = new Intent(this, typeof(CallHistoryActivity));
 				intent.PutStringArrayListExtra("phone_numbers", phoneNumbers);
 				StartActivity(intent);
 			};
-			callButton.Click += (object sender, EventArgs e) =>
+			//callButton.Click += (object sender, EventArgs e) =>
+			//{
+			//	var callDialog = new AlertDialog.Builder(this);
+			//	callDialog.SetMessage("Call " + translatedNumber + "?");
+			//	callDialog.SetNeutralButton("Call", delegate
+			//	{
+			//		phoneNumbers.Add(translatedNumber);
+			//		callHistoryButton.Enabled = true;
+			//		var callIntent = new Intent(Intent.ActionCall);
+			//		callIntent.SetData(Android.Net.Uri.Parse("tel:" + translatedNumber));
+			//		StartActivity(callIntent);
+			//	});
+			//	callDialog.SetNegativeButton("Cancel", delegate { });
+
+			//	callDialog.Show();
+			//};
+
+
+			goToComplete.Click += (object sender, EventArgs e) =>
 			{
-				var callDialog = new AlertDialog.Builder(this);
-				callDialog.SetMessage("Call " + translatedNumber + "?");
-				callDialog.SetNeutralButton("Call", delegate
-				{
-					phoneNumbers.Add(translatedNumber);
-					callHistoryButton.Enabled = true;
-					var callIntent = new Intent(Intent.ActionCall);
-					callIntent.SetData(Android.Net.Uri.Parse("tel:" + translatedNumber));
-					StartActivity(callIntent);
-				});
-				callDialog.SetNegativeButton("Cancel", delegate { });
-
-				callDialog.Show();
+				var intent = new Intent(this, typeof(AutoCompleteActivity));
+				StartActivity(intent);
 			};
-
 
 		}
 	}
