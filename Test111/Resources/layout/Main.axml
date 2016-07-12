@@ -3,23 +3,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar1" />
     <TextView
-        android:text="Enter a Phoneword:"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1" />
-    <TextView
-        android:text="1-855-XAMARIN"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/PhoneNumberText" />
-    <Button
-        android:text="Translate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/TranslateButton" />
     <Button
         android:text="Call"
         android:layout_width="match_parent"

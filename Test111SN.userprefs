@@ -1,16 +1,21 @@
-﻿<Properties StartupItem="Test111\Test111.csproj">
+﻿<Properties StartupItem="wx\wx.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="D:\Projects\XamarinAndroidPractice\Test111SN\Test111\AutoCompleteActivity.cs" line="28" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Test111\AutoCompleteActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Test111\AutoCompleteActivity.cs" Line="15" Column="1" />
-      <File FileName="Test111\MainActivity.cs" Line="86" Column="1" />
+      <File FileName="wx\MainActivity.cs" Line="46" Column="13" />
+      <File FileName="Test111\HomeScreenActivity.cs" Line="11" Column="44" />
+      <File FileName="Test111\HomeScreenAdapter.cs" Line="38" Column="77" />
+      <File FileName="wx\Properties\AndroidManifest.xml" Line="5" Column="12" />
+      <File FileName="wx\Resources\values\Strings.xml" Line="6" Column="1" />
+      <File FileName="Test111\Resources\values\Strings.xml" Line="4" Column="42" />
+      <File FileName="wx\Resources\color\tab_selector_tv_color.xml" Line="8" Column="12" />
+      <File FileName="wx\obj\Debug\android\manifest\AndroidManifest.xml" Line="8" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.wx AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.abc" />
   <MonoDevelop.Ide.ItemProperties.Test111 AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.abc" />
 </Properties>

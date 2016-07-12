@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test111", "Test111\Test111.csproj", "{5AD9DD75-DDB6-4664-BDDB-6D00D9AA929B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wx", "wx\wx.csproj", "{1C2D99CC-728F-453B-9704-E118AE6CAEDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{5AD9DD75-DDB6-4664-BDDB-6D00D9AA929B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AD9DD75-DDB6-4664-BDDB-6D00D9AA929B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AD9DD75-DDB6-4664-BDDB-6D00D9AA929B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2D99CC-728F-453B-9704-E118AE6CAEDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2D99CC-728F-453B-9704-E118AE6CAEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2D99CC-728F-453B-9704-E118AE6CAEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2D99CC-728F-453B-9704-E118AE6CAEDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

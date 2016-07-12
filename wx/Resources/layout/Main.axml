@@ -3,10 +3,9 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-    <Button
-        android:text="go to main page"
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/GoToMain"
-        android:layout_marginTop="100dp" />
+        android:layout_height="0dip"
+        android:layout_weight="1" />
 </LinearLayout>
